@@ -1,0 +1,49 @@
+@main-color: #1f2041ff;
+@sub-color: #4b3f72ff;
+@accent-first: #ffc857;
+@accent-second: #119da4;
+@accent-third: #119da4;
+
+a {
+  text-decoration: none;
+}
+
+.content-banner {
+  padding: 25px;
+  height: 250px;
+
+  flex: 1;
+  display: flex;
+
+  background-color: @accent-second;
+  color: #fafafa;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+  }
+}
+
+.content-banner div {
+  display: grid;
+  align-content: center;
+  flex: 2;
+}
+
+h2, h4 {
+  margin: 5px;
+}
+
+.content-banner img {
+  width: 100%;
+}
+@media screen and (max-width: 1210px) {
+  .body {
+    width: 100%;
+  }
+  .content-banner {
+    margin: 10px;
+  }
+}
+

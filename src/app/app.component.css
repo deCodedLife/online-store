@@ -1,0 +1,15 @@
+.body {
+  width: 1400px;
+  margin: auto;
+}
+@media screen and (max-width: 1400px) {
+  .body {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .body {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */

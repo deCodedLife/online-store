@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="content">
+    <img src="{{ content.image }}">
+    <h2>
+      {{ content.title }}
+    </h2>
+    <h3>
+      {{ content.price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) }}
+    </h3>
+    <div class="button">
+      <h4>
+        В корзину
+      </h4>
+    </div>
+  </div>
+</div>

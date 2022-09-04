@@ -1,0 +1,53 @@
+<div class="header-body">
+  <div class="main-content">
+
+    <a class="logo-link" href="/">
+      <div class="center-in">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865.04595 822.11251"><defs><style>.a,.b{fill:none;stroke-miterlimit:10;stroke-width:30px;}.a{stroke:#fafafa;}.b{stroke:#ffc857;}</style></defs><title>Second</title><path class="a" d="M882,832H142c-11,0-20-8-20-17.77778V209.77778C122,200,131,192,142,192H882c11,0,20,8,20,17.77778V814.22222C902,824,893,832,882,832Z" transform="translate(-51.95405 -177)"/><path class="a" d="M465.98,671.02A294.76946,294.76946,0,0,0,590.22,546.78" transform="translate(-51.95405 -177)"/><path class="a" d="M589.42,476.42a282.52378,282.52378,0,0,1-123.3-123.3" transform="translate(-51.95405 -177)"/><path class="a" d="M400,512a308.23943,308.23943,0,0,0,175,0" transform="translate(-51.95405 -177)"/><path class="a" d="M625,287a268.06979,268.06979,0,0,0,0,175" transform="translate(-51.95405 -177)"/><path class="a" d="M659.78,477.22A300.63366,300.63366,0,0,1,784.02,352.98" transform="translate(-51.95405 -177)"/><path class="a" d="M783.08,670.08a264.80652,264.80652,0,0,0-123.3-123.3" transform="translate(-51.95405 -177)"/><path class="a" d="M675,512a280.96754,280.96754,0,0,1,175,0" transform="translate(-51.95405 -177)"/><path class="a" d="M625,562a307.67953,307.67953,0,0,1,0,175" transform="translate(-51.95405 -177)"/><circle class="a" cx="573.04595" cy="335" r="225"/><circle class="a" cx="573.04595" cy="335" r="50"/><path class="b" d="M399.1469,923.19479c19.0467,11.94945,43.01795,10.66995,59.31262-2.65537A48.58156,48.58156,0,0,0,475.237,873.65909c-4.75564-22.88491-27.182-40.33842-53.8569-39.97625q-151.75771-.79653-303.49127-1.5932c-21.55723-.24134-40.2418-11.708-47.53216-29.11314-1.01389-2.43819-7.12137-17.62235,0-33.45835C77.985,752.4993,97.611,741.92586,119.48213,743.63987c92.07092.74834,168.54726.84485,228.29439,1.44835,15.25666.14484,43.50071.48284,56.82618-17.86384,10.47686-14.43583,12.553-41.56945-5.11772-58.46762-14.48416-13.83232-37.4174-16.14984-55.426-5.09356" transform="translate(-51.95405 -177)"/><path class="b" d="M100.94239,899.658H293.21953c2.36577.14484,22.08832,1.66568,33.31352,18.61219,9.87336,14.87033,8.30426,34.2067-1.30359,47.79767-11.5632,16.343-32.66176,21.38823-49.48752,15.93251-15.13591-4.90054-22.76424-16.99469-24.8886-20.664" transform="translate(-51.95405 -177)"/></svg>
+      </div>
+      <div class="center-in">
+        <h2 class="name">
+          Климтех
+        </h2>
+      </div>
+    </a>
+
+<!--    <div style="flex: 1"></div>-->
+
+    <div class="center-in top-item dropdown">
+      <h2>
+        Оборудование
+      </h2>
+      <div class="drop-parent">
+        <div class="drop-content">
+          <app-category *ngFor="let category of toolCategories" [content]="category"></app-category>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-in top-item dropdown">
+      <h2>
+        Услуги
+      </h2>
+    </div>
+
+    <div style="flex: 1"></div>
+
+    <div class="center-in top-item ">
+      <div class="searchbar">
+        <input placeholder="Найти товар" type="search">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#212121"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      </div>
+    </div>
+
+    <div id="mobile-burger-button" class="center-in">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </div>
+
+    <div class="center-in top-item">
+      <a href="/shopping-cart" class="center-in">
+        <svg class="clickable" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>

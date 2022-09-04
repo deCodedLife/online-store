@@ -1,0 +1,51 @@
+@main-color: #1f2041ff;
+@sub-color: #4b3f72ff;
+@accent-first: #ffc857;
+@accent-second: #119da4ff;
+@accent-third: #119da4ff;
+@text-color: white;
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 10px;
+  row-gap: 10px;
+
+  margin: 20px 0;
+
+  @media screen and (max-width: 1210px) {
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 680px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+app-baner {
+  flex: 1;
+}
+
+.block {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+  margin: 20px 0;
+}
+
+.text-content {
+  padding: 20px;
+  word-break: break-all;
+}
+
+.bleed {
+  color: #fafafa;
+  background-color: @accent-first;
+  box-shadow: 0 0 0 100vmax @accent-first;
+  clip-path: inset(0 -100vmax);
+}

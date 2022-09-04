@@ -1,0 +1,19 @@
+.block {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+.block h1 {
+  padding: 20px;
+}
+.block .category {
+  padding: 0 20px;
+}
+@media screen and (max-width: 480px) {
+  .block .category {
+    padding: 10px 20px;
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=shopping-cart.component.css.map */
