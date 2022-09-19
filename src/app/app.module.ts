@@ -16,6 +16,11 @@ import { CardComponent } from './card/card.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { CartProductComponent } from './cart-product/cart-product.component';
+import { ServicesComponent } from './services/services.component';
+import { ServiceCardComponent } from './service-card/service-card.component';
+import { CalcuatorComponent } from './calcuator/calcuator.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { ProductPageComponent } from './product-page/product-page.component';
     ShoppingCartComponent,
     CategoryComponent,
     CategoryComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    CartProductComponent,
+    ServicesComponent,
+    ServiceCardComponent,
+    CalcuatorComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

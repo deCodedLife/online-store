@@ -1,0 +1,102 @@
+@main-color: #1f2041ff;
+@sub-color: #4b3f72ff;
+@accent-first: #ffc857;
+@accent-second: #119da4ff;
+@accent-third: #119da4ff;
+@text-color: white;
+
+.button {
+  width: 80%;
+  padding: 5px 0;
+  margin: auto;
+
+  color: #fafafa;
+  background-color: @sub-color;
+  border-radius: 3px;
+
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @accent-second;
+  }
+}
+
+
+.container {
+  padding: 5px;
+  //height: 500px;
+
+
+  .card {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    .ne-govno {
+      padding: 5px;
+    }
+
+    cursor: pointer;
+
+    background-color: white;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      word-break: break-word;
+      text-align: center;
+      font-size: medium;
+      padding: 2px;
+
+
+      @media screen and (max-width: 480px) {
+        font-size: small;
+      }
+    }
+
+    h5 {
+      margin: 0;
+      padding: 2px;
+      text-align: center;
+      //word-break: break-all;
+
+      @media screen and (max-width: 480px) {
+        font-size: small;
+        font-weight: normal;
+        height: 120px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.button {
+  width: 80%;
+  padding: 5px 0;
+  margin: auto;
+
+  color: #fafafa;
+  background-color: @sub-color;
+  border-radius: 3px;
+
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @accent-second;
+  }
+}

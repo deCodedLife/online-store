@@ -53,7 +53,7 @@ a {
   width: 100%;
   height: 72px;
   color: @text-color;
-  background-color: @main-color;
+  background-color: @sub-color;
 
   .unmargin{
     margin: 0;
@@ -91,6 +91,10 @@ a {
     width: 48px;
     height: 48px;
     fill: white;
+  }
+
+  .new-logo {
+    width: 150px;
   }
 
   .name {
@@ -160,60 +164,27 @@ a {
   }
 }
 
-.dropdown {
 
-  margin: 0 10px;
 
-  .drop-parent {
-    position: absolute;
-    left: 0;
-    top: 64px;
-    width: 100%;
-    display: none;
+.cart-number {
+  width: 20px;
+  height: 20px;
 
-    .drop-content * {
-      flex: 1;
-    }
+  padding: 2px;
+  position: absolute;
 
-    .drop-content {
-      width: 1400px;
-      height: 100%;
-      margin: auto;
-      color: black;
+  margin-top: 10px;
+  margin-left: 10px;
 
-      background-color: white;
-      box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
+  display: grid;
+  align-content: center;
 
-      display: flex;
-      column-gap: 10px;
-      border-radius: 3px;
-
-      @media screen and (max-width: 1400px) {
-        width: 1200px;
-      }
-
-      @media screen and (max-width: 1210px) {
-        width: auto;
-        margin: 0 10px;
-      }
-    }
+  p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
   }
 
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-
-  &:hover {
-    cursor: pointer;
-    color: @accent-first;
-
-    .drop-parent {
-      display: block;
-    }
-  }
-
-  h2 {
-    font-weight: normal;
-    font-size: medium
-  }
+  background-color: #CE2D4F;
+  border-radius: 50%;
 }

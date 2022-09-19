@@ -40,7 +40,7 @@ a {
   width: 100%;
   height: 72px;
   color: white;
-  background-color: #1f2041;
+  background-color: #4b3f72;
 }
 .header-body .unmargin {
   margin: 0;
@@ -67,6 +67,9 @@ a {
   width: 48px;
   height: 48px;
   fill: white;
+}
+.header-body .new-logo {
+  width: 150px;
 }
 .header-body .name {
   color: #ffc857;
@@ -122,55 +125,21 @@ a {
     display: grid;
   }
 }
-.dropdown {
-  margin: 0 10px;
-}
-.dropdown .drop-parent {
+.cart-number {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
   position: absolute;
-  left: 0;
-  top: 64px;
-  width: 100%;
-  display: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: grid;
+  align-content: center;
+  background-color: #CE2D4F;
+  border-radius: 50%;
 }
-.dropdown .drop-parent .drop-content * {
-  flex: 1;
-}
-.dropdown .drop-parent .drop-content {
-  width: 1400px;
-  height: 100%;
-  margin: auto;
-  color: black;
-  background-color: white;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  column-gap: 10px;
-  border-radius: 3px;
-}
-@media screen and (max-width: 1400px) {
-  .dropdown .drop-parent .drop-content {
-    width: 1200px;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .dropdown .drop-parent .drop-content {
-    width: auto;
-    margin: 0 10px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .dropdown {
-    display: none;
-  }
-}
-.dropdown:hover {
-  cursor: pointer;
-  color: #ffc857;
-}
-.dropdown:hover .drop-parent {
-  display: block;
-}
-.dropdown h2 {
-  font-weight: normal;
-  font-size: medium;
+.cart-number p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 /*# sourceMappingURL=top-header.component.css.map */

@@ -1,4 +1,4 @@
-<a href="{{ content.link }}">
+<a class="dropdown" routerLink="{{ content.link }}">
   <div class="content-banner" style="background-color: {{ content.color }}">
     <div>
       <h2 class="marked-text">
@@ -10,6 +10,11 @@
     </div>
     <div class="image-container">
       <img src="{{ content.image }}">
+    </div>
+  </div>
+  <div class="drop-parent">
+    <div class="drop-content">
+      <app-category *ngFor="let category of content.categories" [content]="category"></app-category>
     </div>
   </div>
 </a>

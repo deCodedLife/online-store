@@ -47,3 +47,69 @@ h2, h4 {
   }
 }
 
+.dropdown {
+
+  margin: 0 10px;
+  z: 999;
+
+  .drop-parent {
+    position: absolute;
+    left: 0;
+    //top: 420px;
+    margin-top: 0px;
+    width: 100%;
+    display: none;
+
+    .drop-content * {
+      flex: 1;
+    }
+
+    .drop-content {
+      width: 1400px;
+      height: 100%;
+      margin: auto;
+      color: black;
+
+      background-color: white;
+      box-shadow: 0 5px 10px rgb(0 0 0 / 50%);
+
+      display: flex;
+
+      column-gap: 10px;
+      border-radius: 3px;
+
+      @media screen and (max-width: 1400px) {
+        width: 1200px;
+      }
+
+      @media screen and (max-width: 1210px) {
+        width: auto;
+        margin: 0 10px;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: @accent-first;
+
+    .drop-parent {
+      display: block;
+    }
+
+    @media screen and (max-width: 900px) {
+      .drop-parent {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: medium
+  }
+}

@@ -1,0 +1,40 @@
+.block {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+  margin: 20px 0;
+  padding: 20px;
+
+  .category {
+    padding: 0 20px;
+
+    @media screen and (max-width: 480px) {
+      padding: 10px 20px;
+      font-size: large;
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px 0;
+  //padding: 20px;
+
+  flex: 3;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.services * {
+  flex: 0 0 20%;
+  max-width: 20%;
+  //height: 500px;
+}

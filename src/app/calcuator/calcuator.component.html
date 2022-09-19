@@ -1,0 +1,16 @@
+<div class="block">
+  <h1>Калькулятор стоимости</h1>
+  <div style="padding: 10px 0"></div>
+  <div class="input-box"><input placeholder="Введите адрес"></div>
+
+  <app-dropdown (sumChanged)="updateInstallation($event)" [content]="installationTypes" [title]="'Монтажные работы по кондиционированию'"></app-dropdown>
+  <app-dropdown (sumChanged)="updateTrack($event)" [content]="trackTypes" [title]="'Трасса'"></app-dropdown>
+  <app-dropdown (sumChanged)="updateAdditions($event)" [content]="additions" [title]="'Дополнительные работы и материал'"></app-dropdown>
+  <app-dropdown (sumChanged)="updateServices($event)" [content]="serviceWorks" [title]="'Сервисные работы по кондиционированию'"></app-dropdown>
+  <app-dropdown (sumChanged)="updateOtherSum($event)" [content]="others" [title]="'Прочие работы'"></app-dropdown>
+
+  <h2>
+    Итого {{ TotalSum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' })  }}
+  </h2>
+
+</div>

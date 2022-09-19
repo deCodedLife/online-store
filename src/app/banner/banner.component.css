@@ -34,4 +34,61 @@ h4 {
     margin: 10px;
   }
 }
+.dropdown {
+  margin: 0 10px;
+  z: 999;
+}
+.dropdown .drop-parent {
+  position: absolute;
+  left: 0;
+  margin-top: 0px;
+  width: 100%;
+  display: none;
+}
+.dropdown .drop-parent .drop-content * {
+  flex: 1;
+}
+.dropdown .drop-parent .drop-content {
+  width: 1400px;
+  height: 100%;
+  margin: auto;
+  color: black;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  column-gap: 10px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 1400px) {
+  .dropdown .drop-parent .drop-content {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .dropdown .drop-parent .drop-content {
+    width: auto;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .dropdown .drop-parent {
+    display: none;
+  }
+}
+.dropdown:hover {
+  cursor: pointer;
+  color: #ffc857;
+}
+.dropdown:hover .drop-parent {
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  .dropdown:hover .drop-parent {
+    display: none;
+  }
+}
+.dropdown h2 {
+  font-weight: normal;
+  font-size: medium;
+}
 /*# sourceMappingURL=banner.component.css.map */

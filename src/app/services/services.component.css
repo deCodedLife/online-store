@@ -1,0 +1,35 @@
+.block {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+}
+.block .category {
+  padding: 0 20px;
+}
+@media screen and (max-width: 480px) {
+  .block .category {
+    padding: 10px 20px;
+    font-size: large;
+  }
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px 0;
+  flex: 3;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: auto;
+  scrollbar-width: none;
+}
+.services::-webkit-scrollbar {
+  display: none;
+}
+.services * {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+/*# sourceMappingURL=services.component.css.map */

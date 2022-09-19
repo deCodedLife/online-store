@@ -12,7 +12,8 @@ export class MinCardComponent implements OnInit {
     id: 0,
     price: 0,
     image: "",
-    title: ""
+    title: "",
+    link: ""
   }
 
   constructor() { }

@@ -1,1 +1,7 @@
-<p>cart-product works!</p>
+<tr class="info">
+  <td><img width="100" src="{{ content.image }}"></td>
+  <td>{{ content.title }}</td>
+  <td>{{ content.amount }}</td>
+  <td>{{ content.price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) }}</td>
+  <td style="text-align: right">{{ content.summary.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) }}</td>
+</tr>

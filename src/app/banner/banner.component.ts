@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Banner} from '../home/home.component';
+import { Category } from "../category/category.component";
 
 @Component({
   selector: 'app-baner',
@@ -14,7 +15,8 @@ export class BannerComponent implements OnInit {
     subtitle: "Test",
     image: "https://coded.life/favicon.ico",
     color: "#119da4",
-    link: "/"
+    link: "/",
+    categories: []
   }
 
   constructor() { }
